@@ -151,6 +151,10 @@ const FibonacciCalculator: React.FC = () => {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyPress={handleKeyPress}
+                onFocus={() => {
+                  setResult(null);
+                  setError('');
+                }}
                 className={`flex-1 transition-all duration-300 ${
                   error ? 'border-destructive focus:ring-destructive' : 'focus:ring-primary'
                 }`}
