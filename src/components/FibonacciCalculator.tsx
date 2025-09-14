@@ -159,7 +159,7 @@ const FibonacciCalculator: React.FC = () => {
               />
               <Button 
                 onClick={handleCalculate}
-                disabled={isCalculating || !input}
+                disabled={isCalculating}
                 variant="mathematical"
                 className="min-w-32"
               >
